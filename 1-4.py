@@ -11,24 +11,3 @@ while number > 0:
     number //= 10  # number = number // 10  - целочисленное деление
 print(max)
 
-#
-#
-# i = 3481561
-# ls = []
-# while i > 10:
-#     ls.append(i % 10)
-#     i //= 10
-# r = max(ls)
-# print(r)
-#
-#
-# def f(num):
-#     m = 0
-#     for n in str(num):
-#         if int(n) > m:
-#             m = int(n)
-#     return m
-#
-#
-# def f(num):
-#     return int(sorted(str(num))[-1])
