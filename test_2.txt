@@ -1,0 +1,3 @@
+Hello, world!
+My name is Richard.
+I have a friend. His name is Bob.
