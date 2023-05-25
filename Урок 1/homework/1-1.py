@@ -23,8 +23,8 @@ roubles = int(input('Введите сумму в рублях: '))
 euro = 115.60
 dollar = 104.68
 
-rub_to_euro: float = roubles / euro
+rub_to_euro = roubles / euro
 rub_to_dollar = roubles / dollar
 
-print(f'Сумма {roubles:,} рублей = {rub_to_euro:,.2f} евро')
+print(f'Сумма {roubles:,} рублей = {(round(rub_to_euro, 2))} евро')  # Сумма 200,000,000 рублей
 print(f'Сумма {roubles:,} рублей = {rub_to_dollar:,.2f} долларов')

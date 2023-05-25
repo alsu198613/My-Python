@@ -2,17 +2,30 @@
 # Для решения используйте цикл while и арифметические операции.
 
 number = int(input('Введите целое положительное число: '))
-i_num = number % 10  # остаток от деления на 10
+num = number 
 max = 0
 # print(i_num)
-while number > 0:
-    if i_num > max:
-        max = i_num
-    number //= 10  # number = number // 10  - целочисленное деление
+while num > 0:
+    last_digit = num % 10 
+    if last_digit > max:
+        max = last_digit
+        if max == 9:  # Это условие не обязательно, но экономит время исполнения. Цифр больше 9 не бывает.
+            break
+    num //= 10  # number = number // 10  - целочисленное деление
 print(max)
 
-#
-#
+# Функция с рекурсией
+
+def num_max(num):
+    if num < 10:
+        return num
+    else:
+        m = num_max(num // 10)
+        return m if m > num % 10 else num % 10
+
+
+print(f"The largest number is: {num_max(int(input('Enter the number: ')))}")
+
 # i = 3481561
 # ls = []
 # while i > 10:
