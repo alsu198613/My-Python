@@ -10,10 +10,12 @@ seasons = {'зима': (1, 2, 12),
 if month <= 0 or type(month) != int:
     print('Ошибка. Введите месяц в виде целого числа от 1 до 12')
 
+# dict
 for key in seasons.keys():
     if month in seasons[key]:
         print(f'Данный месяц относится к сезону {key}')
 
+# list
 seasons_list = list(seasons.keys())
 if month in [12, 1, 2]:
     print(f'Данный месяц относится к сезону {seasons_list[0]}')
